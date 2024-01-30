@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to right, #000000, #9F0500, #FFEB3B, #FF5722);
+  animation: gradient 10s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+   
+  }
+}
+
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.logosena {
+  max-width: 35vw;
+  max-height: 35vh;
+  object-fit: auto;
+  max-height: 100%;
+  margin-right: 60px;
+}
+
+.square {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square i {
+  position: absolute;
+  inset: 0;
+  border: 2px solid #fff;
+  transition: 0.5s;
+}
+
+.square i:nth-child(1) {
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  animation: animate 10s linear infinite;
+}
+
+.square i:nth-child(2) {
+  border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
+  animation: animate 7s linear infinite;
+}
+
+.square i:nth-child(3) {
+  border-radius: 41% 44% 56% 59% / 38% 62% 63% 37%;
+  animation: animate 6s linear infinite;
+}
+
+.square i:nth-child(4) {
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  animation: animate 13s linear infinite;
+}
+
+.square:hover i {
+  border: 6px solid var(--clr);
+  filter: drop-shadow(0 0 20px var(--clr));
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate2
+{
+    0%
+    {
+        transform:rotate(360deg);
+
+    }
+    100%
+    {
+        transform: rotate(0deg);
+    }
+}
+
+.login
+{
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/*Efecto cambio color*/
+.login h2:hover
+{
+    color: #697689;
+    background-color: rgba(255, 255, 255, 0.5); /* 50% de opacidad */
+    border-radius: 10px;
+}
+
+
+.login .inputBx
+{
+    position: relative;
+    width: 100%;
+}
+
+.login .inputBx input
+{
+    position: relative;
+    width: 100%;
+    padding: 12px 49px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 15px ;
+    font-size: 1.2em;
+    color: #000000;
+    box-shadow: none;
+    outline: none;
+}
+
+/*Login*/
+
+.login .inputBx input[type="text"]:hover{
+  border-color: #697689;
+}
+
+.login .inputBx input[type="password"]:hover{
+  border-color: #697689;
+}
+
+.login .inputBx input[type="submit"]:hover{
+ transition: opacity 5s linear;
+ opacity: 0;
+ background: linear-gradient(to right, #000000, #FFFFFF);
+ border-color: #000000;
+}
+
+/*Texto Login*/
+
+.login .links
+{
+    position: relative;
+    width: 100% ;
+    display: flex ;
+    align-items: center ;
+    justify-content: space-between ;
+    padding: 0 20px;
+}
+
+.login .links a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.links a{
+    font-weight: bold;
+    width: -1px;
+    display: flex;
+}
+
+.links a:hover{
+  color: #607D8B;
+}
+
+/*Imagen de Logo*/
+/*
+.logosena{
+    max-width: 35vw;
+    max-height: 35vh;
+    object-fit: auto;
+    max-height: 100%;
+    margin-right: 60px;
+    border-radius: 100px;
+    box-shadow: 15px 15px 2px rgba(0, 0, 0, 0.5);
+    
+}
+*/
+
+
